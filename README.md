@@ -53,7 +53,6 @@ It supports **founder/admin login**, **multiple users**, fingerprint authenticat
 ### 📈 Dashboard Visuals
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Abishekus01&show_icons=true&theme=radical&hide_border=false&border_radius=15&rank_icon=github&include_all_commits=true&custom_title=💎%20Abishek's%20GitHub%20Stats" alt="GitHub Stats" width="49%"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abishekus01&layout=donut&theme=radical&hide_border=false&border_radius=15&langs_count=8&custom_title=🧠%20Top%20Languages%20Used" alt="Top Languages" width="49%"/>
 </p>
 
