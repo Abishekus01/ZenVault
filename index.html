@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ZenVault — Login</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ff88">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="h1">ZenVault Login</div>
+      <div class="small">Secure Vault for Founder & Users</div>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button class="btn" id="loginBtn">Login</button>
+      <button class="btn" id="fingerprintBtn">Login with Fingerprint</button>
+      <div id="msg" class="small" style="margin-top:8px;color:red"></div>
+    </div>
+  </div>
+
+<script src="login.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(reg => console.log('Service Worker registered:', reg))
+    .catch(err => console.log('Service Worker failed:', err));
+}
+</script>
+</body>
+</html>

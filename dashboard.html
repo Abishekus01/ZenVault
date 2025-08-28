@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ZenVault — Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ff88">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div id="welcome" class="h1">Welcome, User</div>
+          <div id="role" class="small">Founder</div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <div class="small">Abishek & Vishwa — ZenVault</div>
+          <button class="btn" id="logout">Logout</button>
+        </div>
+      </div>
+      <div style="margin-top:18px">
+        <div class="small">Your Vault</div>
+        <div id="vaultList"></div>
+        <div style="margin-top:14px" class="small">Quick actions</div>
+        <div class="row" style="margin-top:8px">
+          <button class="btn" id="addDummy">Add credential</button>
+          <button class="btn" id="exportBtn">Export Vault (JSON)</button>
+        </div>
+        <div id="adminSection" style="margin-top:14px; display:none">
+          <div class="small">All Users Data (Admin Only)</div>
+          <div id="allUsers"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="dashboard.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(reg => console.log('Service Worker registered:', reg))
+    .catch(err => console.log('Service Worker failed:', err));
+}
+</script>
+</body>
+</html>
